@@ -11,7 +11,7 @@ const Header = ({name , handleDepartmentChange}) => {
   return (
     <header className=" bg-cyan-700  flex justify-between items-center px-4 py-2">
       <div className="text-xl font-bold text-white">
-        <img src="../../public/logo.jpg" alt="" className='w-28 h-10 border border-black shadow-sm shadow-gray-400 sm:w-56 sm:h-12' />
+        <img src="logo.jpg" alt="" className='w-28 h-10 border border-black shadow-sm shadow-gray-400 sm:w-56 sm:h-12' />
       </div>
       <div className="flex items-center space-x-4">
         <div className="relative flex flex-row gap-6 justify-center">
