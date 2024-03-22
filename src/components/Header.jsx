@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { FaRegUserCircle } from "react-icons/fa";
 
+
 const Header = ({name , handleDepartmentChange}) => {
   // const [selectedDepartment, setSelectedDepartment] = useState('Marketing');
 
