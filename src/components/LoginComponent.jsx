@@ -48,7 +48,7 @@ function LoginComponent() {
 
   return (
     <div className='bg-gray-700 py-6 px-6'>
-        <img src="../../public/logo.jpg" alt="" className='sm:w-52 h-12 mix-blend-multiply w-36' />
+        <img src="/logo.jpg" alt="" className='sm:w-52 h-12 mix-blend-multiply w-36' />
     <div className='flex flex-col justify-center items-center  text-white h-screen'>
     
       <div className='flex flex-col h-4/5 2xl:w-[43%]  xl:w-[50%] lg:w-[60%] md:w-[70%] sm:w-[80%] w-[95%] items-center bg-neutral-900'>
