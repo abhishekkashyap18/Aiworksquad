@@ -1,6 +1,7 @@
 import React,{useState} from 'react';
 import { useNavigate } from 'react-router-dom'; // For navigation
 import { TfiEmail } from "react-icons/tfi";
+import { CiLock } from "react-icons/ci";
 
 
 function LoginComponent() {
@@ -56,6 +57,8 @@ function LoginComponent() {
         {errorMessage && <p className="error-message">{errorMessage}</p>}
 
       <form onSubmit={handleSubmit} className='w-full h-full flex justify-center items-center flex-col rounded mb-24'>
+      <div className='flex flex-row border border-white mt-4 justify-between w-[53%] rounded-md'>
+        <span className='flex flex-row items-center ml-2 text-sm'><TfiEmail/></span>
         <input 
          type="text"
          id="Email"
@@ -64,9 +67,12 @@ function LoginComponent() {
          value={Email}
          onChange={handleUsernameChange}
          required
-          className='border  border-white rounded-md w-[53%] h-11 bg-neutral-900 px-6'
+          className='rounded-md w-[100%] h-11 bg-neutral-900 px-6 outline-none'
         />
+      </div>
 
+      <div className='flex flex-row border border-white mt-5 justify-between w-[53%] rounded-md'>
+        <span className='flex flex-row items-center ml-2 '><CiLock/></span>
           <input 
             type="password"
             id="password"
@@ -75,9 +81,9 @@ function LoginComponent() {
             value={password}
             onChange={handlePasswordChange}
             required
-            className='mt-12 border  border-white rounded-md w-[53%] h-11 bg-neutral-900 px-6'
+            className='rounded-md h-11 w-[100%] bg-neutral-900 px-6 outline-none'
           />
-      
+      </div>
         
         <div className='flex sm:flex-row  justify-between sm:gap-10 my-3 gap-5 flex-col'>
            <span className='flex flex-row xl:mr-9'>
